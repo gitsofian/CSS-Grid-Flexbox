@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style4.css">
+    <title>FLEXBOX Projekt</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/img11.jpg" alt="Logo CSS3">
+        </div>
+        <div>   
+            <h1>FLEXBOX</h1>
+            <h2>Fiche de revision</h2>
+        </div>
+    </header>
+    <article>
+        <section>
+            <h2>Container's propreties</h2>
+            
+            <div>
+                <h3>Display</h3>
+                <p>Le Display flex est donne au container et il permet de rendre tous les items flexible.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>display: flex | inline-flex;</span>}
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>flex-direction</h3>
+                <p>Par defaut les items se retrouvent l'un a cote de l'autre et ils ont pour largeur ce qu'il contiennent.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>flex-direction: row | row-inverse | column | column-inverse;</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>row :</strong>(Par defaut) Les items sont aligne en ligne de gauche a droite.
+                    </li>
+                    <li>
+                        <strong>row-reverse :</strong> Les items sont aligne en ligne inversee de droite a gauche.
+                    </li>
+                    <li>
+                        <strong>column :</strong> Les items sont empiles l'un sur l'autre de haut en bas.
+                    </li>
+                    <li>
+                        <strong>column-reverse :</strong> Les items sont empiles l'un sur l'autre de bas en haut.
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>flex-wrap</h3>
+                <p>Par defaut les items ne reviennent pas a la ligne.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>flex-wrap: nowrap | wrap | wrap-reverse</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>nowrap :</strong>(Par defaut) Les items ne reviennent pas a la ligne.
+                    </li>
+                    <li>
+                        <strong>wrap :</strong> Les items reviennent a la ligne.
+                    </li>
+                    <li>
+                        <strong>wrap-reverse :</strong> Les items reviennent a la ligne  de maniere inversee.
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>flex-flow</h3>
+                <p>Propriete generique reunissant flex-direction et flex-wrap.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>flex-flow: column wrap</span>}
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>justify-content</h3>
+                <p>Aligne les items suivant l'axe principal.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>flex-start :</strong> (Par defaut) Les items demarrent au debut de l'axe principal
+                    </li>
+                    <li>
+                        <strong>flex-end :</strong> Les items demarrent a la fin de l'axe principal
+                    </li>
+                    <li>
+                        <strong>center :</strong> Les items centres selon l'axe pricipal.
+                    </li>
+                    <li>
+                        <strong>space-around :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe principal d'une distance correspond a la moitie de la valeur de la distance qui separe les items du milieu. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                    <li>
+                        <strong>space-between :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe principal. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                    <li>
+                        <strong>space-evenly :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe principal d'une distance qui separe les items du milieu. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3>align-items</h3>
+                <p>Aligne les items suivant l'axe secondaire.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>align-items: stretch | flex-start | flex-end | center | baseline</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>stretch :</strong> (Par defaut) Les items occupent toute la largeur qui leur est alouee.
+                    </li>
+                    <li>
+                        <strong>flex-start :</strong> Les items demarrent au debut de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>flex-end :</strong> Les items demarrent a la fin de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>center :</strong> Les items centres selon l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>baseline :</strong> Les items sont alignes suivant leur ligne de base.
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section>
+            <h2>Content's propreties</h2>
+            <div>DIV</div>
+        </section>
+    </article>
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>

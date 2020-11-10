@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* ***********************Header********************** */
+header{
+    background-color: #000;
+    display: flex;
+    padding: 20px;
+    font-family: 'Bebas Neue', cursive; 
+    justify-content: space-evenly   ;
+
+
+}
+
+header img{
+    width: 200px;
+}
+
+header div:nth-child(2){
+    text-align: center;
+    background-color: #1f1c28;
+    padding-left: 70px;
+    padding-right: 60px;   
+    border-radius: 50px;
+}
+header h1{
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 2px;
+    margin: 0px;
+}
+header h2{
+    color: #29a9df;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+}
+
+/* *********************Article************************ */
+article{
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    
+}
+
+section{
+    flex: 1 1 0;
+}
+section:nth-child(1){
+    margin-right: 20px;
+}
+section:nth-child(2){
+    margin-left: 20px;
+}
+
+section div{
+    background-color: #ccc;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section h2{
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+section h3{
+    color: #0170ba;
+    font-family: 'Bebas Neue', cursive; 
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+.code{
+    background-color: #000000;
+    color: orange;
+    border-radius: 15px;
+    padding: 12px;
+}
+.code span{
+    display: flex;
+    margin-left: 1rem;
+}
+
+/* *********************Footer************************ */
+footer{
+    background-color: #000;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div:nth-child(2){
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 25px;
+        width: 60%;
+    }
+    header h1{
+        font-size: 4rem;
+    }
+    header h2{
+        font-size: 1.5rem;
+    }
+    article{
+        flex-direction: column;
+        padding: 0px;       
+    }
+
+    section:nth-child(1){
+        margin-right: 0px;
+    }
+    section:nth-child(2){
+        margin-left: 0px;
+    }
+}

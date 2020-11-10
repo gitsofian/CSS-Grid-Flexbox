@@ -1,0 +1,32 @@
+#container{
+    display: flex;
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+    /* flex-flow: column wrap; */
+    background-color:#000;
+    width: 403px;
+    align-content: space-evenly;
+    height: 200px;
+}
+
+.item1{
+    background-color: #f36;
+    padding: 20px;
+    order: 0;
+}
+
+.item2{
+    background-color: #ff3;
+    padding: 20px;
+}
+.item3{
+    background-color:#f0c;
+    padding: 20px;
+    order:1
+}
+.item4{
+    background-color:#f10;
+    padding: 20px;
+}
