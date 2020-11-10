@@ -93,6 +93,13 @@ section h3{
 /* *********************Footer************************ */
 footer{
     background-color: #000;
+    padding: 35px;
+}
+footer p{
+    color: #ccc;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
 }
 
 @media screen and (max-width: 800px){

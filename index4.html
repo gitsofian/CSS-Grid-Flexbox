@@ -142,14 +142,125 @@
                 </ul>
             </div>
 
+            <div>
+                <h3>align-content</h3>
+                <p>Ne fontionne que si il y a plusieurs lignes ou plusieurs cologne.</p>
+                <div class="code">
+                    <p>#container{
+                        <span>align-content: stretch | flex-start | flex-end | center | space-between | space-around | space-evenly</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>stretch :</strong> (Par defaut) Les items occupent toute la largeur qui leur est alouee.
+                    </li>
+                    <li>
+                        <strong>flex-start :</strong> Les items demarrent au debut de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>flex-end :</strong> Les items demarrent a la fin de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>center :</strong> Les items centres selon l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>space-around :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe secondaire d'une distance correspond a la moitie de la valeur de la distance qui separe les items du milieu. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                    <li>
+                        <strong>space-between :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe secondaire. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                    <li>
+                        <strong>space-evenly :</strong> Les items sont alignes de gauche a droite et ils sont calles au debut et la fin de l'axe secondaire d'une distance qui separe les items du milieu. Les items du milieu sont espaces d'une distance equivalente.
+                    </li>
+                </ul>
+            </div>
+
         </section>
         <section>
             <h2>Content's propreties</h2>
-            <div>DIV DIV</div>
+            
+            <div>
+                <h3>align-self</h3>
+                <p>Permet d'aligner une item particulier. Propriete prioritaire!</p>
+                <div class="code">
+                    <p>.item{
+                        <span>align-self: stretch | flex-start | flex-end | center | baseline</span>}
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <strong>stretch :</strong> (Par defaut) L'item occupe toute la largeur qui lui est alouee.
+                    </li>
+                    <li>
+                        <strong>flex-start :</strong> L'item demarre au debut de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>flex-end :</strong> L'item demarre a la fin de l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>center :</strong> L'item est centre selon l'axe secondaire.
+                    </li>
+                    <li>
+                        <strong>baseline :</strong> L'items est  aligne suivant sa ligne de base.
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>order</h3>
+                <p>Permet d'ordonner l'affichage des items. La valeur par defaut est 0</p>
+                <div class="code">
+                    <p>.item{
+                        <span>order: 1</span>}
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>flex-grow</h3>
+                <p>Permet de definir la largeur d'un item. La valeur par defaut est 0</p>
+                <div class="code">
+                    <p>.item{
+                        <span>flex-grow: 0</span>}
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <h3>flex-shrink</h3>
+                <p>Permet de diminuer la largeur d'un item. La valeur par defaut est 1</p>
+                <div class="code">
+                    <p>.item{
+                        <span>flex-shrink: 1</span>}
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>flex-basis</h3>
+                <p>Permet de faire varier ou non la largeur d'un item. La valeur par defaut est auto</p>
+                <div class="code">
+                    <p>.item{
+                        <span>flex-basis: auto</span>}
+                    </p>
+                </div>
+            </div>
+            
+            <div>
+                <h3>flex</h3>
+                <p>Propriete generique reunissant les proprietes flex-grow, flex-shrink et flex-basis.</p>
+                <div class="code">
+                    <p>.item{
+                        <span>flex: 0 1 auto</span>}
+                    </p>
+                </div>
+            </div>
+
+
         </section>
     </article>
     <footer>
-        FOOTER
+        <p>Etre a l'aise avec FLEXBOX!</p>
     </footer>
 </body>
 </html>
